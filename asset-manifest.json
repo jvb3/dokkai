@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dokkai/static/css/main.77de2ea5.css",
-    "main.js": "/dokkai/static/js/main.998b6149.js",
+    "main.js": "/dokkai/static/js/main.99e263bd.js",
     "index.html": "/dokkai/index.html",
     "main.77de2ea5.css.map": "/dokkai/static/css/main.77de2ea5.css.map",
-    "main.998b6149.js.map": "/dokkai/static/js/main.998b6149.js.map"
+    "main.99e263bd.js.map": "/dokkai/static/js/main.99e263bd.js.map"
   },
   "entrypoints": [
     "static/css/main.77de2ea5.css",
-    "static/js/main.998b6149.js"
+    "static/js/main.99e263bd.js"
   ]
 }
