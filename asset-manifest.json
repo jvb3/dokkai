@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dokkai/static/css/main.77de2ea5.css",
+    "main.js": "/dokkai/static/js/main.998b6149.js",
+    "index.html": "/dokkai/index.html",
+    "main.77de2ea5.css.map": "/dokkai/static/css/main.77de2ea5.css.map",
+    "main.998b6149.js.map": "/dokkai/static/js/main.998b6149.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77de2ea5.css",
+    "static/js/main.998b6149.js"
+  ]
+}
