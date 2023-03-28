@@ -14,6 +14,7 @@ import Toolbar from "./components/Toolbar";
 import SaveDialogBox from "./components/SaveDialogBox";
 
 //Hooks
+import { useEffect } from "react";
 import useToolbar from "./utils/HandleToolbar";
 import useSubmittedText from "./utils/HandleSubmittedText";
 import useFindWord from "./utils/useFindWord";
@@ -217,6 +218,7 @@ export default function App() {
     goToJapaneseText,
     goToHome,
   };
+
   return (
     <AppTheme>
       <CssReset />
