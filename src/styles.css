@@ -1,0 +1,16 @@
+
+
+.highlight-on{
+  background-color: #fd707b;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+
+.merged-translation{
+  inline-size: 100%; 
+  word-break: break-all;
+  hyphens: auto;
+}
+
+
