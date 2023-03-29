@@ -14,7 +14,7 @@ import { BiSave } from "react-icons/bi";
 export const ToolbarContainer = styled.section`
   flex-direction: row;
   align-items: center;
-  height: 275px;
+  height: 375px;
   display: flex;
   background-color: ${({ theme }) => theme.color.black};
   border-top-left-radius: 0px;
@@ -29,15 +29,14 @@ export const ToolbarContainer = styled.section`
 export const IconContainer = styled.div`
   display: ${(props) => (props.isToolbar ? "flex" : "none")};
   flex-direction: column;
-  gap: 1rem;
-  /* border: 1px solid red; */
-  padding: 0 7px 0 7px;
+  gap: 1.5rem;
+  padding: 0 10px 0 10px;
 `;
 
 export const RtArrow = styled(RxDoubleArrowRight)`
   color: ${({ theme }) => theme.color.white};
-  height: 13px;
-  width: 13px;
+  height: 18px;
+  width: 18px;
   margin-right: 3px;
   :hover {
     cursor: pointer;
@@ -45,16 +44,9 @@ export const RtArrow = styled(RxDoubleArrowRight)`
 `;
 export const LtArrow = styled(RxDoubleArrowLeft)`
   color: ${({ theme }) => theme.color.white};
-  height: 13px;
-  width: 13px;
+  height: 18px;
+  width: 18px;
   margin-right: 3px;
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-export const SearchIcon = styled(TfiSearch)`
-  color: ${({ theme }) => theme.color.white};
   :hover {
     cursor: pointer;
   }
@@ -62,6 +54,17 @@ export const SearchIcon = styled(TfiSearch)`
 
 export const HomeIcon = styled(AiOutlineHome)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const SearchIcon = styled(TfiSearch)`
+  color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -69,6 +72,8 @@ export const HomeIcon = styled(AiOutlineHome)`
 
 export const WordListIcon = styled(AiOutlineOrderedList)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -76,6 +81,8 @@ export const WordListIcon = styled(AiOutlineOrderedList)`
 
 export const BilingualIcon = styled(FaLanguage)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -83,6 +90,8 @@ export const BilingualIcon = styled(FaLanguage)`
 
 export const TranslateIcon = styled(AiOutlineTranslation)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -90,6 +99,8 @@ export const TranslateIcon = styled(AiOutlineTranslation)`
 
 export const TextIcon = styled(TbFileText)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -97,6 +108,8 @@ export const TextIcon = styled(TbFileText)`
 
 export const SaveIcon = styled(BiSave)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }
@@ -104,6 +117,8 @@ export const SaveIcon = styled(BiSave)`
 
 export const TimerIcon = styled(MdOutlineTimer)`
   color: ${({ theme }) => theme.color.white};
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
   }

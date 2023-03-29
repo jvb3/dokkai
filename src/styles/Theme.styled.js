@@ -22,7 +22,7 @@ const myTheme = {
   fontSize: {
     extraSmall: "12px",
     small: "14px",
-    regular: "16px",
+    regular: "18px",
     large: "29px",
     extraLarge: "50px",
   },

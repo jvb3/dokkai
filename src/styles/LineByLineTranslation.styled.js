@@ -9,17 +9,13 @@ const fadeInText = keyframes`
   }
 `;
 
-export const Container = styled.span`
-  background-color: ${(props) => props.theme.color.white};
-  border: 1px solid red;
-`;
-
 export const Text = styled.span`
   color: ${(props) => props.theme.color.black};
   font-family: ${(props) => props.theme.fontFamily.japanese};
   animation-name: ${fadeInText};
   animation-duration: 250ms;
   animation-timing-function: ease-in;
+  font-size: 18px;
 `;
 
 export const Textarea = styled.textarea`

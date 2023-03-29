@@ -55,13 +55,8 @@ export const Header = styled.div`
   animation-duration: 1s;
   color: ${(props) => props.theme.color.black};
   padding: 1rem;
-  font-size: ${(props) => props.theme.fontSize.extraLarge};
+  font-size: 75px;
   font-weight: ${(props) => props.theme.fontWeight.bold};
-
-  //large font
-  @media (max-width: 425px) {
-    font-size: ${(props) => props.theme.fontSize.large};
-  }
 `;
 
 export const Period = styled.span`
@@ -74,7 +69,7 @@ export const TextArea = styled.textarea`
   background-color: ${(props) => props.theme.color.white};
   color: ${(props) => props.theme.color.black};
   font-family: ${(props) => props.theme.fontFamily.japanese};
-  font-size: ${(props) => props.theme.fontSize.regular};
+  font-size: 18px;
   border: 1px solid ${(props) => props.theme.color.black};
   animation-name: ${(props) => props.animateFirst && moveTextArea};
   animation-duration: 1s;
@@ -83,12 +78,8 @@ export const TextArea = styled.textarea`
   resize: none;
   outline: none;
   width: 75%;
-  height: 10rem;
+  height: 15rem;
   padding: 1rem;
   border-radius: 3px;
-  line-height: 25px;
-
-  @media (max-width: 425px) {
-    width: 100%;
-  }
+  line-height: 1.5;
 `;

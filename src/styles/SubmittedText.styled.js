@@ -13,7 +13,7 @@ export const Wrapper = styled.article`
   background-color: ${(props) => props.theme.color.blue};
   min-height: 100vh;
   display: grid;
-  grid-template-columns: auto 24%;
+  grid-template-columns: auto 25%;
   position: relative;
   padding-left: 1.5rem;
 `;
@@ -22,12 +22,8 @@ export const Container = styled.article`
   border-radius: 3px;
   height: fit-content;
   background-color: ${(props) => props.theme.color.white};
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem;
-
-  @media (max-width: 425px) {
-    width: 100%;
-  }
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 3rem;
 `;
 
 export const Text = styled.section`
@@ -37,6 +33,5 @@ export const Text = styled.section`
   animation-timing-function: ease-in;
   color: ${(props) => props.theme.color.black};
   font-family: ${(props) => props.theme.fontFamily.japanese};
+  font-size: 18px;
 `;
-
-export const WordPanel = styled.section``;

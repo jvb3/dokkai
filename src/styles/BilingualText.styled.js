@@ -23,6 +23,7 @@ export const TextJap = styled.section`
   animation-name: ${fadeInText};
   animation-duration: 250ms;
   animation-timing-function: ease-in;
+  font-size: ${(props) => props.theme.fontSize.regular};
 `;
 
 export const TextEng = styled(TextJap)`

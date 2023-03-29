@@ -5,10 +5,10 @@ export const Container = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 85px;
   background-color: ${(props) => props.theme.color.black};
   color: ${(props) => props.theme.color.white};
-  font-size: 14px;
+  font-size: 18px;
 `;
 
 export const LinksContainer = styled.div`
@@ -18,12 +18,12 @@ export const LinksContainer = styled.div`
 `;
 
 export const LinkStyled = styled(NavLink)`
-  padding: 1rem;
+  padding: 2rem;
   &.active {
     text-decoration: underline;
   }
   &:visited {
-    color: inherit;
+    color: ${(props) => props.theme.color.white};
   }
   &:hover {
     background-color: #201917;

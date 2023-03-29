@@ -12,8 +12,8 @@ function useContextMenu() {
     const { pageX, pageY } = ev;
     setContextMenu({
       show: true,
-      x: pageX + 10,
-      y: pageY - 45,
+      x: pageX + 5,
+      y: pageY - 70,
     });
     ev.preventDefault();
   };

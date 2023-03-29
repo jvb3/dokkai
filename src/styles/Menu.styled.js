@@ -15,24 +15,32 @@ export const Container = styled.div`
 `;
 
 export const SearchIcon = styled(TfiSearch)`
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.black};
   }
 `;
 export const WordListIcon = styled(AiOutlineOrderedList)`
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.black};
   }
 `;
 export const TimerIcon = styled(MdOutlineTimer)`
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.black};
   }
 `;
 export const SaveIcon = styled(BiSave)`
+  height: 20px;
+  width: 20px;
   :hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.black};
@@ -40,10 +48,11 @@ export const SaveIcon = styled(BiSave)`
 `;
 
 export const Option = styled.div`
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: ${(props) => props.theme.fontSize.small};
 
   :hover {
     background-color: ${(props) => props.theme.color.white};

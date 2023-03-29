@@ -31,10 +31,14 @@ const SaveDialogBox = ({
   return (
     <Container boxPosition={boxPosition}>
       <FormContainer>
-        <label>Title</label>
-        <input value={title} onChange={titleInput} />
-        <label>Date</label>
-        <input value={date} onChange={dateInput} />
+        <div>
+          <label>My translation title:</label>
+          <input value={title} onChange={titleInput} />
+        </div>
+        <div>
+          <label>Date:</label>
+          <input value={date} onChange={dateInput} />
+        </div>
       </FormContainer>
       <BtnContainer>
         <SaveDialogueBtn
@@ -47,7 +51,7 @@ const SaveDialogBox = ({
             )
           }
         >
-          Ok
+          Download
         </SaveDialogueBtn>
         <SaveDialogueBtn onClick={closeDialogueBox}>Cancel</SaveDialogueBtn>
       </BtnContainer>

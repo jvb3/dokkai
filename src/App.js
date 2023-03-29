@@ -1,5 +1,3 @@
-//TODO - Make animation on word cards cascade as they render
-
 //SECTION - IMPORTS
 
 //Router
@@ -14,20 +12,20 @@ import Toolbar from "./components/Toolbar";
 import SaveDialogBox from "./components/SaveDialogBox";
 
 //Hooks
-import { useEffect } from "react";
-import useToolbar from "./utils/HandleToolbar";
-import useSubmittedText from "./utils/HandleSubmittedText";
-import useFindWord from "./utils/useFindWord";
-import useWordPanel from "./utils/useWordPanel";
+
+import useToolbar from "./hooks/useToolbar";
+import useSubmittedText from "./hooks/useSubmittedText";
+import useFindWord from "./hooks/useFindWord";
+import useWordPanel from "./hooks/useWordPanel";
 import useSelectWord from "./hooks/useSelectWord";
 import useFetch from "./hooks/useFetch";
 import useHighlight from "./hooks/useHighlight";
-import useTranslation from "./utils/HandleTranslation";
-import useAnimation from "./utils/HandleAnimation";
+import useTranslation from "./hooks/useTranslation";
+import useAnimation from "./hooks/useAnimation";
 import useContextMenu from "./hooks/useContextMenu";
-import useSaveDialogueBox from "./utils/HandleSaveDialogueBox";
+import useSaveDialogueBox from "./hooks/useSaveDialogueBox";
 import usePost from "./hooks/usePost";
-import useNavigation from "./utils/HandleNavigation";
+import useNavigation from "./hooks/useNavigation";
 
 //Styles
 import "./styles.css";

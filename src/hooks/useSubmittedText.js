@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import useNavigation from "./HandleNavigation";
+import useNavigation from "./useNavigation";
 
 function useSubmittedText(ref) {
   const { goToJapaneseText } = useNavigation();

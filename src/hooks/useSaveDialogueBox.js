@@ -12,6 +12,8 @@ function useSaveDialogueBox() {
   function openDialogueBox() {
     setShowSaveDialogue(true);
     setPosition();
+    setTitle("");
+    setDate("");
     document.body.style.overflow = "hidden";
   }
 

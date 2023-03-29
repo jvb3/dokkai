@@ -1,22 +1,13 @@
-import styled, { keyframes } from "styled-components";
-
-const fadeInBtn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
 
 const Button = styled.button`
-  animation: ${fadeInBtn} 500ms ease-in;
-  padding: 0.5rem;
+  padding: 0.75rem;
   margin: 1rem;
   border-radius: 3px;
   color: ${(props) => props.theme.color.white};
   background-color: ${(props) => props.theme.color.black};
   border: none;
+  font-size: 18px;
 
   :hover {
     cursor: pointer;

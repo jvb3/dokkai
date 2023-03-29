@@ -4,8 +4,8 @@ import { ImPlay2, ImPause, ImStop } from "react-icons/im";
 
 export const Container = styled.div`
   background-color: ${(props) => props.theme.color.black};
-  width: 150px;
-  height: 35px;
+  width: 200px;
+  height: 50px;
   color: ${(props) => props.theme.color.white};
   display: ${(props) => (props.showTimer ? "flex" : "none")};
   gap: 0.5;
@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Time = styled.div`
-  font-size: ${(props) => props.theme.fontSize.regular};
+  font-size: 20px;
 `;
 
 export const IconContainer = styled.div`
@@ -25,6 +25,8 @@ export const IconContainer = styled.div`
 
 export const PlayIcon = styled(ImPlay2)`
   color: ${(props) => props.theme.color.white};
+  width: 20px;
+  height: 20px;
 
   :hover {
     cursor: pointer;
@@ -33,6 +35,8 @@ export const PlayIcon = styled(ImPlay2)`
 
 export const PauseIcon = styled(ImPause)`
   color: ${(props) => props.theme.color.white};
+  width: 20px;
+  height: 20px;
 
   :hover {
     cursor: pointer;
@@ -41,6 +45,8 @@ export const PauseIcon = styled(ImPause)`
 
 export const StopIcon = styled(ImStop)`
   color: ${(props) => props.theme.color.white};
+  width: 20px;
+  height: 20px;
 
   :hover {
     cursor: pointer;
