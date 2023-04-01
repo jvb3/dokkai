@@ -28,11 +28,13 @@ function SubmittedText(props) {
     handleTimer,
     openDialogueBox,
     wordList,
+    wordCard,
   } = props;
 
   //SECTION - PROPS
 
   const wordPanelProps = {
+    wordCard,
     searchedWord,
     toggleHighlight,
     removeWord,

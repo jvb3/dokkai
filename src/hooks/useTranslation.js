@@ -21,14 +21,15 @@ function useTranslation(pastedText, getSelectedText) {
   }
 
   function insertTextAreas() {
-    const sentencesArr = pastedText.split(`。`).filter((item) => item !== "");
+    const sentencesArr = pastedText?.split(`。`).filter((item) => item !== "");
     const textAreaVals = Object.values(lineByLineTranslation);
     let lineNumberIncrement = 0;
     let valIncrement = 0;
-    const textAreas = sentencesArr.map((item, index) => {
+    const textAreas = sentencesArr?.map((item, index) => {
       return (
         <>
           <Text
+            key={index + 1}
             dangerouslySetInnerHTML={{ __html: `${item}。` }}
             onMouseUp={getSelectedText}
           />
@@ -39,9 +40,10 @@ function useTranslation(pastedText, getSelectedText) {
             }}
             name={`line${lineNumberIncrement++}`}
             onChange={(e) => inputTranslation(e, index)}
-          >
-            {textAreaVals.length === 0 ? "" : textAreaVals[valIncrement++]}
-          </Textarea>
+            value={
+              textAreaVals.length === 0 ? "" : textAreaVals[valIncrement++]
+            }
+          />
         </>
       );
     });

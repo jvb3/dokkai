@@ -7,14 +7,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "cors": "^2.8.5",
     "docx": "^8.0.0",
     "dompurify": "^2.4.3",
     "express": "^4.18.2",
     "file-saver": "^2.0.5",
     "install": "^0.13.0",
-    "mongodb": "^5.1.0",
-    "mongoose": "^7.0.1",
     "npm": "^9.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -53,11 +50,12 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This is a tool for Japanese language learners who want to imporove their reading ability and translation skills.",
   "main": "index.js",
-  "author": "",
+  "author": "James V. Bryan",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "source-map-loader": "^4.0.1"
   }
 }

@@ -19,6 +19,7 @@ export const LinksContainer = styled.div`
 
 export const LinkStyled = styled(NavLink)`
   padding: 2rem;
+  color: inherit;
   &.active {
     text-decoration: underline;
   }

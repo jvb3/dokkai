@@ -34,15 +34,13 @@ function PastedText({
         </HeaderStyled>
         {!showText && (
           <TextAreaStyled
-            // pastedText={pastedText}
+            value={copiedPastedText}
             animateFirst={animateFirst}
             autoFocus
             ref={ref}
             onChange={(e) => handlePastedText(e, ref)}
             placeholder={animateFirst ? "" : "Paste Japanese text here"}
-          >
-            {copiedPastedText}
-          </TextAreaStyled>
+          />
         )}
         {!showText && pastedText && (
           <Button onClick={validateInput}>Start Studying</Button>

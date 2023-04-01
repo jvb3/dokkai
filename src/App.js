@@ -57,14 +57,10 @@ export default function App() {
   } = useSubmittedText();
 
   const { getSelectedText, selectedWord } = useSelectWord();
+
   const { searchedWord, filterData, setSearchedWord } = useFindWord();
+
   const { fetchData } = useFetch(selectedWord, filterData);
-  const { removeWord, toggleDefinition } = useWordPanel(
-    searchedWord,
-    setSearchedWord,
-    pastedText,
-    setPastedText
-  );
 
   const { toggleHighlight } = useHighlight(
     searchedWord,
@@ -72,6 +68,16 @@ export default function App() {
     pastedText,
     setPastedText
   );
+
+  const { removeWord, toggleDefinition, displayWordList } = useWordPanel(
+    searchedWord,
+    setSearchedWord,
+    pastedText,
+    setPastedText,
+    toggleHighlight
+  );
+
+  const { wordCard } = displayWordList();
 
   const { inputTranslation, lineByLineTranslation, insertTextAreas } =
     useTranslation(pastedText, getSelectedText);
@@ -87,6 +93,7 @@ export default function App() {
     titleInput,
     dateInput,
   } = useSaveDialogueBox();
+
   const {
     wordList,
     bilingualText,
@@ -167,10 +174,13 @@ export default function App() {
   };
   const wordPanelProps = {
     searchedWord,
+    setSearchedWord,
     toggleHighlight,
     removeWord,
     toggleDefinition,
+    wordCard,
   };
+  console.log(wordCard);
   const menuProps = {
     handleCloseMenu,
     fetchData,
